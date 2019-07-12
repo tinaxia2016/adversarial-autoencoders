@@ -76,7 +76,7 @@ def encoder_CNN(inputs, is_training, wd=0, bn=False, name='encoder_CNN',
             return layer_dict['cur_input']
 
 def decoder_CNN(inputs, is_training, out_channel=1, wd=0, bn=False, name='decoder_CNN',
-                init_w=tf.keras.initializers.he_normal()):
+                init_w=tf.compat.v1.keras.initializers.he_normal()):
     # init_w = tf.keras.initializers.he_normal()
     layer_dict = {}
     layer_dict['cur_input'] = inputs
