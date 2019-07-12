@@ -207,7 +207,7 @@ def supervised_train():
             
             if epoch_id % 10 == 0:
                 saver.save(sess, '{}aae-epoch-{}'.format(SAVE_PATH, epoch_id))
-                generator.sample_style(sess, valid_data, plot_size=10,
+                generator.sample_style(sess, plot_size=10,
                                        file_id=epoch_id, n_sample=10)
         saver.save(sess, '{}aae-epoch-{}'.format(SAVE_PATH, epoch_id))
 
@@ -228,9 +228,9 @@ def train():
 
     # Use 10000 labels info to train latent space
     n_use_label = 10000
-
+    n_n_use_sample = 50000
     # load data
-    train_data = read_train_data(FLAGS.bsize, n_use_label=n_use_label)
+    train_data = read_train_data(FLAGS.bsize, n_use_label=n_use_label, n_use_sample=n_use_sample)
     valid_data = read_valid_data(FLAGS.bsize)
 
     # create an AAE model for training
