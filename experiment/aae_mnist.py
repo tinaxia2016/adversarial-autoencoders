@@ -16,8 +16,8 @@ from src.helper.generator import Generator
 from src.helper.visualizer import Visualizer
 
 
-DATA_PATH = './mnist_data'
-SAVE_PATH = './mnist_data/out/aae'
+DATA_PATH = './mnist'
+SAVE_PATH = './mnist/out/aae'
 
 def get_args():
     parser = argparse.ArgumentParser()
