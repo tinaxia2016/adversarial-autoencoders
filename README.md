@@ -22,11 +22,6 @@
 - Images are normalized to [-1, 1] before fed into the encoder and tanh is used as the output nonlinear of decoder.
 - All the sub-networks are optimized by Adam optimizer with `beta1 = 0.5`.
 
-## Preparation
-- Download the MNIST dataset from [here](http://yann.lecun.com/exdb/mnist/).
-- Setup path in [`experiment/aae_mnist.py`](experiment/aae_mnist.pyy):
-`DATA_PATH ` is the path to put MNIST dataset.
-`SAVE_PATH ` is the path to save output images and trained model.
 
 ## Usage
 The script [experiment/aae_mnist.py](experiment/aae_mnist.py) contains all the experiments shown here. Detailed usage for each experiment will be describe later along with the results.
