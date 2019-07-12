@@ -55,7 +55,7 @@ def discriminator_FC(inputs, is_training, n_hidden=1000, nl=tf.nn.relu,
         return layer_dict['cur_input']
 
 def encoder_CNN(inputs, is_training, wd=0, bn=False, name='encoder_CNN',
-                init_w=tf.keras.initializers.he_normal()):
+                init_w=tf.compat.v1.keras.initializers.he_normal()):
     # init_w = tf.keras.initializers.he_normal()
     layer_dict = {}
     layer_dict['cur_input'] = inputs
