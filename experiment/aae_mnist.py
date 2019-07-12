@@ -228,7 +228,7 @@ def train():
 
     # Use 10000 labels info to train latent space
     n_use_label = 10000
-    n_n_use_sample = 50000
+    n_use_sample = 50000
     # load data
     train_data = read_train_data(FLAGS.bsize, n_use_label=n_use_label, n_use_sample=n_use_sample)
     valid_data = read_valid_data(FLAGS.bsize)
