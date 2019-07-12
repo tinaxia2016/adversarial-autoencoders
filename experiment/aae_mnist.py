@@ -16,8 +16,8 @@ from src.helper.generator import Generator
 from src.helper.visualizer import Visualizer
 
 
-DATA_PATH = '/home/qge2/workspace/data/MNIST_data/'
-SAVE_PATH = '/home/qge2/workspace/data/out/vae/'
+DATA_PATH = './mnist_data/'
+SAVE_PATH = './mnist_data/out/aae'
 
 def get_args():
     parser = argparse.ArgumentParser()
